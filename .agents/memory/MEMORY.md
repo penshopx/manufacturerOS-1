@@ -1,1 +1,2 @@
 - [Expo native tabs compatibility](expo-native-tabs-compatibility.md) — current Expo Router exposes tab icon and label through NativeTabs.Trigger, not top-level exports.
+- [Expo doctor in the workspace](expo-doctor-workspace.md) — duplicate-React check may include sibling web packages; verify the mobile package’s resolved peers before treating it as an app defect.

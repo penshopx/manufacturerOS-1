@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/manufacture-mobile/"
+title = "ManufactureOS Mobile"
+description = "Aplikasi pendamping native untuk memantau dashboard, produksi, kualitas, keselamatan, dan ringkasan agent ManufactureOS dari perangkat mobile menggunakan data demo lokal."
+version = "1.0.0"
+id = "artifacts/manufacture-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/manufacture-mobile/" ]
+localPort = 19986
+
+[services.development]
+run = "pnpm --filter @workspace/manufacture-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/manufacture-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/manufacture-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "19986"
+BASE_PATH = "/manufacture-mobile/"
