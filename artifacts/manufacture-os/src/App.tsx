@@ -1,10 +1,17 @@
-import { Switch, Route, Router as WouterRouter, Link, useLocation } from "wouter";
+import { type ReactNode } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ErrorBoundary } from "@/components/error-boundary";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { Sidebar } from "@/app/components/Sidebar";
 import { Header } from "@/app/components/Header";
+import {
+  Route,
+  Switch,
+  useLocation,
+  Router as WouterRouter,
+} from "wouter";
 
 import Home from "@/app/page";
 import LandingPage from "@/app/landing/page";
@@ -32,7 +39,7 @@ import MaintenancePage from "@/app/maintenance/page";
 import AuditPage from "@/app/audit/page";
 import BelajarPage from "@/app/belajar/page";
 import ToolsPage from "@/app/tools/page";
-import StategizPage from "@/app/stategi/page";
+import StrategiPage from "@/app/stategi/page";
 import MasterPage from "@/app/master/page";
 import LaporanPage from "@/app/laporan/page";
 import PengaturanPage from "@/app/pengaturan/page";
@@ -47,7 +54,7 @@ import DeliveryPage from "@/app/delivery/page";
 
 const queryClient = new QueryClient();
 
-function AppLayout({ children }: { children: React.ReactNode }) {
+function AppLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
@@ -73,9 +80,18 @@ function Router() {
       <Route path="/quality-agent" component={QualityAgentPage} />
       <Route path="/maintenance-agent" component={MaintenanceAgentPage} />
       <Route path="/supply-chain-agent" component={SupplyChainAgentPage} />
-      <Route path="/production-execution-agent" component={ProductionExecutionAgentPage} />
-      <Route path="/data-intelligence-agent" component={DataIntelligenceAgentPage} />
-      <Route path="/executive-reporting-agent" component={ExecutiveReportingAgentPage} />
+      <Route
+        path="/production-execution-agent"
+        component={ProductionExecutionAgentPage}
+      />
+      <Route
+        path="/data-intelligence-agent"
+        component={DataIntelligenceAgentPage}
+      />
+      <Route
+        path="/executive-reporting-agent"
+        component={ExecutiveReportingAgentPage}
+      />
       <Route path="/workforce-agent" component={WorkforceAgentPage} />
       <Route path="/hse-agent" component={HSEAgentPage} />
       <Route path="/inventory-agent" component={InventoryAgentPage} />
@@ -88,7 +104,7 @@ function Router() {
       <Route path="/audit" component={AuditPage} />
       <Route path="/belajar" component={BelajarPage} />
       <Route path="/tools" component={ToolsPage} />
-      <Route path="/stategi" component={StategizPage} />
+      <Route path="/stategi" component={StrategiPage} />
       <Route path="/master" component={MasterPage} />
       <Route path="/laporan" component={LaporanPage} />
       <Route path="/pengaturan" component={PengaturanPage} />
@@ -105,13 +121,20 @@ function Router() {
   );
 }
 
+function RoutedErrorBoundary({ children }: { children: ReactNode }) {
+  const [location] = useLocation();
+  return <ErrorBoundary resetKey={location}>{children}</ErrorBoundary>;
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <AppLayout>
-            <Router />
+            <RoutedErrorBoundary>
+              <Router />
+            </RoutedErrorBoundary>
           </AppLayout>
         </WouterRouter>
         <Toaster />

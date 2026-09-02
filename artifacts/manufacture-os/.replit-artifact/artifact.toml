@@ -1,13 +1,10 @@
 kind = "web"
 previewPath = "/"
 title = "ManufactureOS"
+description = "A dark, operational AI dashboard for Indonesian Tier 2 automotive manufacturers, with production, quality, safety, maintenance, and specialist agent workflows."
 version = "1.0.0"
 id = "artifacts/manufacture-os"
 router = "path"
-
-[[integratedSkills]]
-name = "react-vite"
-version = "1.0.0"
 
 [[services]]
 name = "web"
@@ -19,8 +16,8 @@ run = "pnpm --filter @workspace/manufacture-os run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/manufacture-os", "run", "build" ]
-publicDir = "artifacts/manufacture-os/dist/public"
 serve = "static"
+publicDir = "artifacts/manufacture-os/dist/public"
 
 [[services.production.rewrites]]
 from = "/*"
