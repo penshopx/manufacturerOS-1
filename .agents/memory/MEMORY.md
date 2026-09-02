@@ -1,0 +1,1 @@
+- [Expo native tabs compatibility](expo-native-tabs-compatibility.md) — current Expo Router exposes tab icon and label through NativeTabs.Trigger, not top-level exports.
