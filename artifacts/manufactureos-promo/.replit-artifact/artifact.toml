@@ -5,7 +5,7 @@ description = "A short animated product showcase for ManufactureOS, highlighting
 version = "1.0.0"
 id = "artifacts/manufactureos-promo"
 router = "path"
-aspectRatio = "16:9"
+videoAspectRatio = "16:9"
 
 [[services]]
 name = "web"
