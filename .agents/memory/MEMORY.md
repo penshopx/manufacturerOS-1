@@ -1,3 +1,2 @@
 - [Expo native tabs compatibility](expo-native-tabs-compatibility.md) — current Expo Router exposes tab icon and label through NativeTabs.Trigger, not top-level exports.
-- [Post-merge package firewall](post-merge-package-firewall.md) — exclude optional api-spec/Orval from automated installs because the workspace registry rejects its tarball.
 - [Expo doctor in the workspace](expo-doctor-workspace.md) — duplicate-React check may include sibling web packages; verify the mobile package’s resolved peers before treating it as an app defect.

@@ -1,0 +1,29 @@
+kind = "video"
+previewPath = "/manufactureos-promo/"
+title = "ManufactureOS Promo"
+description = "A short animated product showcase for ManufactureOS, highlighting the AI Command Center, specialist agents, and measurable impact for Indonesian manufacturing teams."
+version = "1.0.0"
+id = "artifacts/manufactureos-promo"
+router = "path"
+aspectRatio = "16:9"
+
+[[services]]
+name = "web"
+paths = [ "/manufactureos-promo/" ]
+localPort = 21818
+
+[services.development]
+run = "pnpm --filter @workspace/manufactureos-promo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/manufactureos-promo", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/manufactureos-promo/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21818"
+BASE_PATH = "/manufactureos-promo/"

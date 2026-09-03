@@ -1,0 +1,9 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "aHSpcqNGdjxLeIRsNx1UJ"
+uri = "file://artifacts/manufactureos-promo/public/audio/bg_music.mp3"
+type = "audio"
+title = "ManufactureOS promo music"
+description = "Generated music: Driving electronic instrumental background music scoring a high-tech B2B manufacturing AI product promo. Tight analog synth pulses, restrained industrial percussion, warm low-end, 11…"

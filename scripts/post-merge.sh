@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# The imported ManufactureOS app is frontend/demo-only and does not use the
-# generated api-spec package or a database migration. Exclude api-spec because
-# its optional Orval tool is blocked by the workspace package firewall.
+# Exclude the optional api-spec package from automated dependency installation.
 pnpm install --frozen-lockfile \
   --filter "./artifacts/**" \
   --filter "./lib/**" \
@@ -11,4 +9,5 @@ pnpm install --frozen-lockfile \
   --filter "!@workspace/api-spec"
 
 pnpm run typecheck
+pnpm --filter db push
 pnpm --filter @workspace/manufacture-os run build
