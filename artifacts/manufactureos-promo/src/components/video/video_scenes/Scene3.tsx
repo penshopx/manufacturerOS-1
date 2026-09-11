@@ -19,10 +19,21 @@ export function Scene3() {
       {/* Dynamic Background */}
       <motion.div 
         className="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"
-        animate={{ backgroundPosition: ['0px 0px', '100px 100px'] }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, backgroundPosition: ['0px 0px', '100px 100px'] }}
+        exit={{ opacity: 0 }}
+        transition={{ 
+          backgroundPosition: { duration: 20, repeat: Infinity, ease: 'linear' },
+          opacity: { duration: 0.8 }
+        }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900 to-teal-950/40 z-0" />
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900 to-teal-950/40 z-0" 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.8 }}
+      />
 
       <SafeFrame className="z-10 w-full h-full flex flex-col justify-center px-16 py-12">
         
