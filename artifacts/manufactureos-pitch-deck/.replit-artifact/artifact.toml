@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/manufactureos-pitch-deck/"
+title = "ManufactureOS Pitch Deck"
+description = "Pitch deck lengkap untuk demo dan stakeholder yang menjelaskan nilai ManufactureOS, target pengguna, fitur inti, arsitektur agentic AI, dan alur dashboard untuk IKM komponen otomotif Indonesia."
+version = "1.0.0"
+id = "artifacts/manufactureos-pitch-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/manufactureos-pitch-deck/" ]
+localPort = 18416
+
+[services.development]
+run = "pnpm --filter @workspace/manufactureos-pitch-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/manufactureos-pitch-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/manufactureos-pitch-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18416"
+BASE_PATH = "/manufactureos-pitch-deck/"

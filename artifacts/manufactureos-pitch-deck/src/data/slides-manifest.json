@@ -1,0 +1,130 @@
+[
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-010101010101",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01.tsx",
+    "title": "ManufactureOS",
+    "description": "Agentic Manufacturing Operating System untuk IKM Komponen Otomotif Indonesia",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-020202020202",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02.tsx",
+    "title": "Pabrik yang siap naik kelas",
+    "description": "Operasional lebih terukur, keputusan lebih cepat, dan standar kualitas lebih konsisten.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-030303030303",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03.tsx",
+    "title": "Masalahnya bukan kurang kerja keras",
+    "description": "Data dan koordinasi tersebar, sementara tuntutan Tier 1 terus naik.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-040404040404",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04.tsx",
+    "title": "Target pengguna",
+    "description": "Pemilik, pimpinan pabrik, supervisor, dan tim spesialis.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-050505050505",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05.tsx",
+    "title": "Satu operating system untuk seluruh lantai pabrik",
+    "description": "Dari rencana produksi sampai laporan manajemen.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-060606060606",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06.tsx",
+    "title": "Proposisi nilai",
+    "description": "Mengubah data operasional menjadi tindakan yang bisa dijalankan.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-070707070707",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07.tsx",
+    "title": "Dashboard eksekutif: sinyal penting, bukan lautan angka",
+    "description": "Visibilitas ringkas untuk produksi, kualitas, delivery, dan maintenance.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-080808080808",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08.tsx",
+    "title": "Production & QCD",
+    "description": "Rencana dan eksekusi per shift dengan konteks QCD.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-090909090909",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09.tsx",
+    "title": "Quality & Traceability",
+    "description": "Inspeksi, lot, corrective action, dan bukti audit.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-101010101010",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10.tsx",
+    "title": "Maintenance, HSE & workforce",
+    "description": "Aset, keselamatan, dan tim lapangan dalam satu konteks.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-111111111111",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide11.tsx",
+    "title": "Supply chain yang lebih terkendali",
+    "description": "Material, inventory, purchasing, dan supplier bergerak bersama.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-121212121212",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide12.tsx",
+    "title": "Di balik layar: arsitektur agentic AI",
+    "description": "Factory Orchestrator, specialist agents, shared context, dan human-in-the-loop.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-131313131313",
+    "position": 13,
+    "filepath": "src/pages/slides/Slide13.tsx",
+    "title": "Bukan chatbot. Ini tim digital yang bekerja bersama.",
+    "description": "Agent membaca sinyal, memecah masalah, dan menyusun langkah berikutnya.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-141414141414",
+    "position": 14,
+    "filepath": "src/pages/slides/Slide14.tsx",
+    "title": "Alur dashboard utama",
+    "description": "Dari ringkasan pabrik sampai memantau dampak tindakan.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-151515151515",
+    "position": 15,
+    "filepath": "src/pages/slides/Slide15.tsx",
+    "title": "Dari data harian menjadi ritme perbaikan",
+    "description": "Siklus kerja dengan prioritas, PIC, status, dan pembelajaran.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "9dbf6ee2-3b0a-4ab5-a8c6-161616161616",
+    "position": 16,
+    "filepath": "src/pages/slides/Slide16.tsx",
+    "title": "ManufactureOS",
+    "description": "Jembatan bagi IKM Indonesia untuk memenuhi standar yang lebih tinggi.",
+    "speakerNotes": ""
+  }
+]
